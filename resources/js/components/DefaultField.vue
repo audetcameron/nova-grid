@@ -1,5 +1,6 @@
 <template>
-    <div ref="field-wrapper">
+
+    <div ref="field-wrapper" :class="this.field.size"> <!-- ADD this.field.size to this div -->
         <field-wrapper>
             <div :class="fieldWrapperClasses">
 
@@ -51,7 +52,7 @@
         mounted() {
          if (this.hasSize) {
             this.$parent.$parent.$el.classList.add('nova-grid-card-styles');
-            this.$refs['field-wrapper'].parentNode.classList.add(this.field.size)
+            // this.$refs['field-wrapper'].parentNode.classList.add(this.field.size)  //COMMENT THIS OUT
         }
     },
 
@@ -106,6 +107,10 @@
 }
 
 .nova-grid-card-styles {
+    display: flex; //ADDED
+    flex-wrap: wrap; //ADDED
+    width: 100%; //ADDED
+
     > form {
         display: flex;
         flex-wrap: wrap;
