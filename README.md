@@ -1,4 +1,4 @@
-This was a MR fix for a nova updat issue Based on this package that was dropped by the author https://packagist.org/packages/jobcerto/nova-grid.
+This was a MR fix for a nova update issue Based on this package that was dropped by the author https://packagist.org/packages/jobcerto/nova-grid.
 
 The package is now maintained at https://github.com/nibri10/nova-grid
 
